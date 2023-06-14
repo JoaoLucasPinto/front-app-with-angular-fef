@@ -20,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
+import { ProductComponent } from './product/product.component';
+import { ProductService } from './service/product.service';
 
 
 
@@ -27,7 +29,8 @@ import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerComponent
+    CustomerComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { DatePipe } from '@angular/common';
   ],
   providers: [
     CustomerService,
+    ProductService,
     DatePipe
   ],
   bootstrap: [AppComponent]
